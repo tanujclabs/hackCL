@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+android:background="@drawable/bg1"
+    android:layout_height="match_parent"
+    tools:context="com.hackcl.smiyc.SelectFriends"
+    tools:ignore="MergeRootFrame" >
+
+    <ListView
+        android:id="@+id/friendList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sendSurprise"
+        android:layout_below="@+id/head" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/sendSurprise"
+        android:layout_width="match_parent"
+        android:text="Send"
+        android:layout_height="110px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="40px"
+        android:textColor="#fff"
+        android:background="#6000"
+        android:onClick="onClick" />
+
+    <Button
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#8000"
+        android:text="Choose Friends"
+        android:textColor="#fff"
+        android:textSize="45px" />
+
+</RelativeLayout>

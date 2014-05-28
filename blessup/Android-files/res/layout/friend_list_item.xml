@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="200px"
+    android:longClickable="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="160px"
+            android:layout_height="160px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30px" >
+
+            <ImageView
+                android:id="@+id/friendprofimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/round_image" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/namefield"
+            android:layout_width="340px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30px"
+            android:text="TextView"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textSize=" 38px" />
+
+        <ImageView
+            android:id="@+id/blessimage"
+            android:layout_width="162px"
+            android:layout_height="162px"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/blessup_btn_norma" />
+    </LinearLayout>
+
+</LinearLayout>

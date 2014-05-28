@@ -1,0 +1,75 @@
+h2 Registeration Or Login
+  form(action='/registration_or_login_through_facebook', method='post')
+      | fbid :
+      input(type='text', name='fbid')
+      | fb_ame :
+      input(type='text', name='fbname')
+      | fbaccesstoken :
+      input(type='text', name='fbaccesstoken')
+      | email :
+      input(type='text', name='email')
+      | devicetoken :
+      input(type='text', name='devicetoken')
+      input(type='submit')
+h2 Fb Friends
+   form(action='/get_fb_friends', method='post')
+      | fbid :
+      input(type='text', name='fbid')
+      | fbaccesstoken :
+      input(type='text', name='fbaccesstoken')
+      input(type='submit')
+h2 Fb Friends of friend
+   form(action='/get_fb_friends_of_friend', method='post')
+      | userid :
+      input(type='text', name='userid')
+      | accesstoken :
+      input(type='text', name='accesstoken')
+      input(type='submit')
+h2 Bless user
+   form(action='/bless_user', method='post')
+      | userid :
+      input(type='text', name='userid')
+      | accesstoken :
+      input(type='text', name='accesstoken')
+      input(type='submit')
+h2 View user blessing profile
+   form(action='/view_user_blessing_profile', method='post')
+      | accesstoken :
+      input(type='text', name='accesstoken')
+      input(type='submit')
+h2 View feed
+   form(action='/view_feed', method='post')
+      | accesstoken :
+      input(type='text', name='accesstoken')
+      input(type='submit')
+h2 Update bless view
+    form(action='/update_bless_view_status', method='post')
+      | accesstoken :
+      input(type='text', name='accesstoken')
+      | blessid :
+      input(type='text', name='blessid')
+      input(type='submit')
+h2 Update bless view time
+    form(action='/update_bless_view_time', method='post')
+      | accesstoken :
+      input(type='text', name='accesstoken')
+      | timestamp :
+      input(type='text', name='timestamp')
+      input(type='submit')
+h2 Update push status
+    form(action='/update_push_status', method='post')
+      | accesstoken :
+      input(type='text', name='accesstoken')
+      | flag :
+      input(type='text', name='flag')
+      input(type='submit')
+h2 cron
+    form(action='/cron', method='post')
+      input(type='submit')
+h2 cron
+    form(action='/update_devicetoken', method='post')
+      | accesstoken :
+      input(type='text', name='accesstoken')
+      | devicetoken :
+      input(type='text', name='devicetoken')
+      input(type='submit')

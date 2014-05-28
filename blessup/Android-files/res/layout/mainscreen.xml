@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="720px"
+    android:layout_height="1134px"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="720px"
+        android:layout_height="wrap_content"
+        android:background="#ccc"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/friendsbtn"
+            android:layout_width="180px"
+            android:layout_height="104px"
+            android:background="@drawable/friends_selector" />
+
+        <Button
+            android:id="@+id/feedsbtn"
+            android:layout_width="180px"
+            android:layout_height="104px"
+            android:background="@drawable/feed_selector" />
+
+        <Button
+            android:id="@+id/profilebtn"
+            android:layout_width="180px"
+            android:layout_height="104px"
+            android:background="@drawable/profile_selecter" />
+
+        <Button
+            android:id="@+id/settingsbtn"
+            android:layout_width="180px"
+            android:layout_height="104px"
+            android:background="@drawable/settings_selector" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/friendlayout"
+            android:layout_width="720px"
+            android:layout_height="1080px"
+            android:background="#fff"
+            android:visibility="visible" >
+
+            <ListView
+                android:id="@+id/frndlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#e5e5e5"
+                android:visibility="gone"
+                android:dividerHeight="1px" >
+            </ListView>
+             <ListView
+                android:id="@+id/frndlistnon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#e5e5e5"
+                android:visibility="visible"
+                android:dividerHeight="1px" >
+            </ListView>
+
+            <RelativeLayout
+                android:id="@+id/bottomlay"
+                android:layout_width="720px"
+                android:layout_height="80px"
+                android:background="#fff"
+                android:layout_centerHorizontal="true"
+                 android:layout_marginTop="940px"
+                 >
+
+                <LinearLayout
+                    android:layout_width="720px"
+                    android:layout_height="80px"
+                    android:layout_centerHorizontal="true"
+                    android:background="#fff"
+                   android:layout_marginLeft="40px"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/registered"
+                        android:layout_width="333px"
+                        android:layout_height="62px"
+                        android:layout_gravity="center_vertical"
+                       android:gravity="center"
+                         android:layout_centerHorizontal="true"
+                        android:background="@drawable/non_reg_selecter"
+                       />
+
+                    <TextView
+                        android:id="@+id/unregistered"
+                        android:layout_width="333px"
+                        android:layout_height="62px"
+                        android:layout_gravity="center_vertical"
+                          android:gravity="center"
+                        android:background="@drawable/reg_selecter"
+                       
+                     >
+                    </TextView>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/feedlayout"
+            android:layout_width="720px"
+            android:layout_height="1080px"
+            android:background="#fff"
+            android:visibility="gone" >
+
+            <ListView
+                android:id="@+id/feedlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#e5e5e5"
+                android:dividerHeight="1px" >
+            </ListView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/profilelayout"
+            android:layout_width="720px"
+            android:layout_height="1080px"
+            android:background="#08cff3"
+            android:visibility="gone" >
+
+            <com.vinayrraj.flipdigit.lib.Flipmeter
+                android:id="@+id/Flipmeter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="105px"
+                android:layout_marginTop="120px" />
+
+            <TextView
+                android:id="@+id/counterlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Flipmeter"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="25px"
+                android:ems="10"
+                android:text="Your Blessing&apos;s Counter"
+                android:textColor="#fff"
+                android:textSize="40px" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="400px"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="720px"
+                    android:layout_height="150px"
+                    android:layout_centerHorizontal="true"
+                    android:background="#fff"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/label1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="40px"
+                        android:text="Today Blessings"
+                        android:textColor="#414141"
+                        android:textSize="40px" />
+
+                    <TextView
+                        android:id="@+id/counter1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="280px"
+                        android:text="56"
+                        android:textColor="#414141"
+                        android:textSize="50px" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="720px"
+                    android:layout_height="150px"
+                    android:background="#efefef"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/label2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="40px"
+                        android:text="This Week Blesings"
+                        android:textColor="#414141"
+                        android:textSize="40px" />
+
+                    <TextView
+                        android:id="@+id/counter2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="222px"
+                        android:text="56"
+                        android:textColor="#414141"
+                        android:textSize="50px" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="720px"
+                    android:layout_height="150px"
+                    android:layout_centerHorizontal="true"
+                    android:background="#fff"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/label3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="40px"
+                        android:text="This month blessings"
+                        android:textColor="#414141"
+                        android:textSize="40px" />
+
+                    <TextView
+                        android:id="@+id/counter3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="180px"
+                        android:text="56"
+                        android:textColor="#414141"
+                        android:textSize="50px" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="720px"
+                    android:layout_height="150px"
+                    android:layout_centerHorizontal="true"
+                    android:background="#efefef"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/label4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="40px"
+                        android:text="This Year Blessings"
+                        android:textColor="#414141"
+                        android:textSize="40px" />
+
+                    <TextView
+                        android:id="@+id/counter4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="220px"
+                        android:text="56"
+                        android:textColor="#414141"
+                        android:textSize="50px" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/settingslayout"
+            android:layout_width="720px"
+            android:layout_height="1080px"
+            android:background="#fff"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="400px"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="720px"
+                    android:layout_height="150px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="20px"
+                    android:background="#efefef"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/label10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:paddingTop="30px"
+                        android:text="Blessings Check Time"
+                        android:textColor="#414141"
+                        android:textSize="40px" />
+
+                    <TextView
+                        android:id="@+id/picker"
+                        android:layout_width="200px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100px"
+                        android:paddingTop="30px"
+                        android:text="00:00"
+                        android:textColor="#414141"
+                        android:textSize="50px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/timelay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300px"
+                    android:layout_marginLeft="100px"
+                    android:layout_marginTop="0px"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <TimePicker
+                        android:id="@+id/timePicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300px"
+                        android:layout_marginRight="30px" />
+
+                    <Button
+                        android:id="@+id/settime"
+                        android:layout_width="200px"
+                        android:layout_height="270px"
+                        android:background="@drawable/done_selecter" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="720px"
+                    android:layout_height="150px"
+                    android:background="#efefef"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/label11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="40px"
+                        android:text="Push Notifications"
+                        android:textColor="#414141"
+                        android:textSize="40px" />
+
+                    <Button
+                        android:id="@+id/onoff"
+                        android:layout_width="125px"
+                        android:layout_height="45px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="170px"
+                        android:background="@drawable/off_btn" >
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="720px"
+                android:layout_height="400px"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/profile_image_back"
+                    android:layout_width="1000px"
+                    android:layout_height="800px"
+                    android:layout_marginLeft="-100px"
+                    android:layout_marginTop="-300px"
+                    android:background="@drawable/ic_launcher"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/aaa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="-100px"
+                    android:layout_marginTop="-300px"
+                    android:background="#80000000" />
+
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="200px"
+                    android:layout_height="200px"
+                    android:layout_centerInParent="true" />
+
+                <ImageView
+                    android:id="@+id/profile_fimage"
+                    android:layout_width="300px"
+                    android:layout_height="300px"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/profile_pic" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

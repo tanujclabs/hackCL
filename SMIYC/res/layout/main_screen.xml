@@ -1,0 +1,271 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".Main" >
+
+    <RelativeLayout
+        android:id="@+id/surpriseParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btmId"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout1"
+        android:onClick="parentClick" >
+
+        <Button
+            android:layout_width="440px"
+            android:layout_height="440px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/choose"
+            android:clickable="false"
+            android:gravity="center"
+            android:onClick="choose"
+            android:tag="mwar"
+            android:text="Choose Surprize"
+            android:textColor="#fff"
+            android:textSize="50px" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="250px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#6000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/userImg"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:layout_marginLeft="20px"
+            android:tag="mlar" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="5px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20px"
+            android:background="#000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:layout_marginLeft="10px"
+                android:gravity="center"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:singleLine="true"
+                android:text="User Name"
+                android:textColor="#FFF"
+                android:textSize="50px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="95px"
+                android:layout_marginLeft="10px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/reply"
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:background="@drawable/like_image"
+                    android:tag="mlar" />
+
+                <TextView
+                    android:id="@+id/likes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:text="23"
+                    android:textColor="#FFF"
+                    android:textSize="40px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="95px"
+                android:layout_marginLeft="10px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/reply"
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:background="@drawable/dislike_image"
+                    android:tag="mlar" />
+
+                <TextView
+                    android:id="@+id/dislike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:text="15"
+                    android:textColor="#FFF"
+                    android:textSize="40px" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btmId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#6000"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="status"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/TextView03"
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    android:background="#2000"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Past Surprises"
+                    android:textColor="#fff"
+                    android:textSize="40px" >
+
+                    <Button
+                        android:id="@+id/indictor"
+                        android:layout_width="70px"
+                        android:layout_height="70px"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/green"
+                        android:clickable="false"
+                        android:duplicateParentState="true"
+                        android:tag="mlar" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/appStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    android:background="#2000"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Enable Surprizes"
+                    android:textColor="#fff"
+                    android:textSize="40px" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/Button01"
+                android:layout_width="5px"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="frnds"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/TextView03"
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    android:background="#2000"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Past Surprises"
+                    android:textColor="#fff"
+                    android:textSize="40px" >
+
+                    <Button
+                        android:id="@+id/indictor"
+                        android:layout_width="80px"
+                        android:layout_height="80px"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/frnd"
+                        android:clickable="false"
+                        android:duplicateParentState="true"
+                        android:tag="mlar" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/appStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    android:background="#2000"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Friends"
+                    android:textColor="#fff"
+                    android:textSize="40px" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:background="#000" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:background="#6000"
+            android:onClick="recent"
+            android:text="Recent Surprizes"
+            android:textColor="#fff"
+            android:textSize="40px" />
+    </LinearLayout>
+
+</RelativeLayout>

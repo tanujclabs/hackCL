@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LeaderBoardScript.cs">
+    <Files>
+      <File FileName="Assets/Scripts/LeaderBoardScript.cs" Line="21" Column="36" />
+      <File FileName="Assets/Scripts/PlaneMove.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameOverScreenScript.cs" Line="46" Column="2" />
+      <File FileName="Assets/Scripts/GameStartScreenScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GlowBallScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/ReadyScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/ResumePanelScript.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

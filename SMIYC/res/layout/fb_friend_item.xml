@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="280px"
+    android:background="#2000"
+    tools:context=".Login" >
+
+    <Button
+        android:id="@+id/header"
+        android:layout_width="390px"
+        android:layout_height="90px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#6000"
+        android:gravity="left|center"
+        android:paddingLeft="20px"
+        android:textColor="#fff"
+        android:textSize="35px"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="190px"
+        android:layout_below="@+id/header" >
+
+        <TextView
+            android:id="@+id/friendNameUnReg"
+            android:layout_width="350px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16px"
+            android:layout_toRightOf="@+id/friendImage"
+            android:gravity="left|center"
+            android:singleLine="true"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="36px"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/friendImage"
+            android:layout_width="110px"
+            android:layout_height="110px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            android:tag="mlar" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/inviteReg"
+                android:layout_width="190px"
+                android:layout_height="70px"
+                android:background="#6000"
+                android:gravity="center"
+                android:text="Block"
+                android:textColor="#fff"
+                android:textSize="35px" />
+
+            <Button
+                android:id="@+id/poke"
+                android:layout_width="190px"
+                android:layout_height="70px"
+                android:layout_marginTop="10px"
+                android:background="#6000"
+                android:gravity="center"
+                android:text="Poke"
+                android:textColor="#fff"
+                android:textSize="35px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16px"
+            android:layout_marginTop="15px"
+            android:layout_toRightOf="@+id/friendImage"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/friendName"
+                android:layout_width="350px"
+                android:layout_height="40px"
+                android:singleLine="true"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="33px" />
+
+            <LinearLayout
+                android:id="@+id/likesHead"
+                android:layout_width="300px"
+                android:layout_height="40px"
+                android:layout_alignLeft="@+id/friendName"
+                android:layout_below="@+id/friendName"
+                android:layout_marginTop="10px"
+                android:gravity="left|center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="35px"
+                    android:layout_height="35px"
+                    android:background="@drawable/like_image"
+                    android:tag="mlar" />
+
+                <TextView
+                    android:id="@+id/noOfLikes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#fff"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/DisLikesHead"
+                android:layout_width="300px"
+                android:layout_height="40px"
+                android:layout_alignLeft="@+id/friendName"
+                android:layout_below="@+id/likesHead"
+                android:layout_marginTop="10px"
+                android:gravity="left|center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:background="@drawable/dislike_image"
+                    android:tag="mlar" />
+
+                <TextView
+                    android:id="@+id/noOfDisLikes"
+                    android:layout_width="300px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:singleLine="true"
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#fff"
+                    android:textSize="30px" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#000" />
+    </RelativeLayout>
+
+</RelativeLayout>

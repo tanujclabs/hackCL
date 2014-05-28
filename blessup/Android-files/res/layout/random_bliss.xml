@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0000"
+    android:orientation="vertical" >
+ <LinearLayout
+        android:layout_width="720px"
+        android:layout_height="wrap_content"
+        android:background="#08cff3"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/backbtn"
+            android:layout_width="104px"
+            android:layout_height="104px"
+            android:background="@drawable/back_selecter" />
+
+     
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/settingslayout"
+        android:layout_width="720px"
+        android:layout_height="1080px"
+        android:background="#08cff3"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="400px"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="720px"
+                android:layout_height="150px"
+                android:gravity="center"
+                android:layout_marginBottom="20px"
+                android:background="#efefef"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/label10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blessings Check Time"
+                    android:textColor="#414141"
+                    android:textSize="50px" />
+
+        
+            </LinearLayout>
+
+            
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="720px"
+            android:layout_height="400px"
+            android:background="#fff"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/profile_image_back"
+                android:layout_width="1000px"
+                android:layout_height="800px"
+                android:layout_marginLeft="-100px"
+                android:layout_marginTop="-300px"
+                />
+
+          
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:id="@+id/profile_fimage"
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/profile_pic" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

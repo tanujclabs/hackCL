@@ -1,0 +1,31 @@
+body{
+  background-color: #1d348e;
+  }
+.form-control{
+	border:0px;
+	border-radius:0px;
+}
+.btn-lg, .btn-group-lg > .btn {
+border-radius: 0px;
+border:0px;	
+margin-top:10px;
+background-color: #091A5C;}	
+.form-signin{
+width: 40%;
+margin: 0 auto;
+position:absolute;
+top:40%;
+left:30%;
+}
+#login_btn{
+	width:90px;
+	height:105px;
+	background: url('../img/login_normal.png');
+	cursor:pointer;
+
+	margin:0 auto;
+	margin-top:10px; 
+}
+#login_btn:hover{
+	background: url('../img/login_active.png');
+}
