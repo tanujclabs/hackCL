@@ -1,0 +1,64 @@
+doctype html
+h1 List Users (IOS)
+form(action='/list_users', method='POST')
+  | device_token
+  input(type='text', name='device_token')
+  br
+  input(type='submit', value='Show')
+h1 Add New User (Web Panel)
+form(action='/add_new_user', method='post', enctype='multipart/form-data')
+  | user_name
+  input(type='text', name='user_name')
+  br
+  | email_id
+  input(type='text', name='email_id')
+  br
+  | phone
+  input(type='text', name='phone')
+  br
+  | image
+  input(type='file', name='image')
+  br
+  | pic
+  input(type='text', name='pic')
+  br
+  input(type='submit', value='Add User')
+h1 Attendance entry(IOS)
+form(action='/attendance_entry', method='post', enctype='multipart/form-data')
+  | user_id
+  input(type='text', name='user_id')
+  br
+  | in_out_flag
+  input(type='text', name='in_out_flag')
+  br
+  | image
+  input(type='file', name='image')
+  br
+  input(type='submit', value='Add User')
+h1 View today attendance(Web panel)
+form(action='/view_today_attendance', method='post')
+  | date
+  input(type='text', name='date')
+  br
+  input(type='submit', value='View')
+h1 Edit present absent flag(Web panel)
+form(action='/edit_present_absent_flag_web_panel', method='post', enctype='multipart/form-data')
+  | attendance_ids
+  input(type='text', name='attendance_ids')
+  br
+  | present_absent_flag_ids
+  input(type='text', name='present_absent_flag_ids')
+  br
+  input(type='submit', value='Update')
+h1 Unapprove Attendance Entry Web Panel(Web panel)
+form(action='/unapprove_attendance_entry_web_panel', method='post', enctype='multipart/form-data')
+  | attendance_ids
+  input(type='text', name='attendance_ids')
+  br
+  | email_ids
+  input(type='text', name='email_ids')
+  br
+  | approval_flags
+  input(type='text', name='approval_flags')
+  br
+  input(type='submit', value='Update')
