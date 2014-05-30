@@ -1,0 +1,19 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/userinterface.cs">
+    <Files>
+      <File FileName="Assets/Scripts/cameraMove.cs" Line="9" Column="1" />
+      <File FileName="Assets/Scripts/RevolutionandRotation.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/userinterface.cs" Line="138" Column="56" />
+      <File FileName="Assets/Scripts/linedraw.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/smoothLookat.cs" Line="1" Column="1" />
+      <File FileName="../Github/yaac-unity/YAAC/Assets/Scripts/PinchnZoom.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/welcomescreen.cs" Line="32" Column="74" />
+      <File FileName="Assets/iTween/Sample/RotateSample.cs" Line="12" Column="77" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
